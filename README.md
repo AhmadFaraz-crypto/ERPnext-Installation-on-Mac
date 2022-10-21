@@ -105,8 +105,8 @@ NOTE: After setting the mariadb configuration if you still face this type of iss
     
 then you have to go in mariadb shell and ran these commands
 
-   SET collation_server = 'utf8mb4_unicode_ci';
-   brew services restart mariadb
+      SET collation_server = 'utf8mb4_unicode_ci';
+      brew services restart mariadb
 
 ### STEP 8 install Redis
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, 
