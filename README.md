@@ -172,5 +172,7 @@ before next step and You must login.
     bench --site site1.local add-to-hosts
     
     bench start
+    
+Your server will run on this host
 
     http://site1.local:8000/
