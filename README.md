@@ -140,8 +140,7 @@ user to convert any given HTML (Web Page) to PDF document or an image (jpg, png,
 
     brew install wkhtmltopdf
     
-### if you have to setup production server go to Step 16 else continue 
-
+    
 ### STEP 12 install frappe-bench
 
     sudo -H pip3 install frappe-bench
