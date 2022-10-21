@@ -5,7 +5,7 @@
 
       Python 3.6+
       Homebrew 3.6+
-      Node.js
+      Node.js 14
       Redis 5                                       (caching and real time updates)
       MariaDB                                       (to run database driven apps)
       yarn 1.12+                                    (js dependency manager)
@@ -103,7 +103,7 @@ NOTE: After setting the mariadb configuration if you still face this type of iss
     Please add the settings below to MariaDB's my.cnf, restart MariaDB then
     run `bench new-site site1.local` again.
     
-then you have to go in mariadb shell and ran these commands
+then you have to go in mariadb shell and run these commands
 
       SET collation_server = 'utf8mb4_unicode_ci';
       brew services restart mariadb
