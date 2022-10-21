@@ -160,9 +160,12 @@ NOTE: If you face this type of issue.
     Please verify the settings above in MariaDB's my.cnf. Restart MariaDB. And
     then run `bench new-site site1.locale` again.
     
-then you have to go in mariadb shell and run these commands
+then you have to go in mariadb shell and run this commands
 
       SET GLOBAL collation_server = 'utf8mb4_unicode_ci';
+ 
+and restart the mariadb
+
       brew services restart mariadb
 
 ### STEP 15 install ERPNext latest version in bench & site
