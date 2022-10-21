@@ -152,10 +152,13 @@ before next step and You must login.
         
 NOTE: If you face this type of issue.
 
-    Creation of your site - site1.local failed because MariaDB is not properly
-    configured to use the Barracuda storage engine.
-    Please add the settings below to MariaDB's my.cnf, restart MariaDB then
-    run `bench new-site site1.local` again.
+    For key collation_server. Expected value utf8mb4_unicode_ci, found value utf8mb4_general_ci
+    ================================================================================
+    Creation of your site - site11.locale failed because MariaDB is not properly
+    configured. If using version 10.2.x or earlier, make sure you use the
+    the Barracuda storage engine.
+    Please verify the settings above in MariaDB's my.cnf. Restart MariaDB. And
+    then run `bench new-site site1.locale` again.
     
 then you have to go in mariadb shell and run these commands
 
