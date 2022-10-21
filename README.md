@@ -96,17 +96,6 @@ Now press (Ctrl-X) to exit
 
     brew services start mariadb
 
-NOTE: After setting the mariadb configuration if you still face this type of issue.
-
-    Creation of your site - site1.local failed because MariaDB is not properly
-    configured to use the Barracuda storage engine.
-    Please add the settings below to MariaDB's my.cnf, restart MariaDB then
-    run `bench new-site site1.local` again.
-    
-then you have to go in mariadb shell and run these commands
-
-      SET collation_server = 'utf8mb4_unicode_ci';
-      brew services restart mariadb
 
 ### STEP 8 install Redis
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, 
@@ -160,6 +149,18 @@ before next step and You must login.
 ### STEP 14 create a site in frappe bench 
     
     bench new-site site1.local
+        
+NOTE: If you face this type of issue.
+
+    Creation of your site - site1.local failed because MariaDB is not properly
+    configured to use the Barracuda storage engine.
+    Please add the settings below to MariaDB's my.cnf, restart MariaDB then
+    run `bench new-site site1.local` again.
+    
+then you have to go in mariadb shell and run these commands
+
+      SET collation_server = 'utf8mb4_unicode_ci';
+      brew services restart mariadb
 
 ### STEP 15 install ERPNext latest version in bench & site
 
