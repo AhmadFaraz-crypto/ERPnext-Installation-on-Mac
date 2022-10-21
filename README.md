@@ -159,7 +159,7 @@ NOTE: If you face this type of issue.
     
 then you have to go in mariadb shell and run these commands
 
-      SET collation_server = 'utf8mb4_unicode_ci';
+      SET GLOBAL collation_server = 'utf8mb4_unicode_ci';
       brew services restart mariadb
 
 ### STEP 15 install ERPNext latest version in bench & site
