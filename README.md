@@ -5,9 +5,9 @@
 
       Python 3.6+
       Homebrew 3.6+
-      Node.js 14+
+      Node.js
       Redis 5                                       (caching and real time updates)
-      MariaDB 10.3.x / Postgres 9.5.x               (to run database driven apps)
+      MariaDB                                       (to run database driven apps)
       yarn 1.12+                                    (js dependency manager)
       pip 20+                                       (py dependency manager)
 
@@ -51,7 +51,7 @@ at the same time on the same machine.
     sudo pip3 install virtualenv
     
 
-### STEP 5 Install MariaDB 10.3 stable package
+### STEP 5 Install MariaDB
 MariaDB is developed as open source software and as a relational database it provides an SQL interface 
 for accessing data.
 
